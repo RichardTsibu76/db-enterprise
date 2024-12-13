@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prducts</title>
+
+    <style>
+        /* Styling for the image gallery section */
+section div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: #333;
+}
+
+/* General styling for images */
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    animation: rotateZoom 3s infinite ease-in-out; /* Add animation */
+}
+
+/* On hover effects */
+section img:hover {
+    transform: scale(1.1) rotate(10deg);
+    opacity: 1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Keyframes for continuous rotate and zoom effect */
+@keyframes rotateZoom {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    50% {
+        transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* Adding a subtle bounce animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Applying bounce animation on hover */
+section img:hover {
+    animation: bounce 1s ease infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section div {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    section img {
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    section div {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+    }
+}
+
+/* Contact message container */
+.contact-message {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    background: linear-gradient(90deg, #ff0037, #ff0015);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(251, 245, 245, 0.753);
+    animation: slideIn 2s ease-out, pulseGlow 3s infinite alternate;
+}
+
+/* Glowing effect */
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 5px #00ff6a, 0 0 10px #00c6ff, 0 0 20px #00ff6a;
+    }
+    100% {
+        text-shadow: 0 0 10px #00ff6a, 0 0 20px #00c6ff, 0 0 30px #00ff6a;
+    }
+}
+
+/* Sliding entrance */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-message {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-message {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1 style=" text-align: center;" >Davben Enterprise, your smart and perfect choice for premium solutions </h1>
+
+    <div class="contact-message">
+        Hi, which of them are you interested in? Just contact me on 
+        <strong>0243527981</strong> | <strong>0272889220</strong> | <strong>0206438871</strong>
+    </div>
+    
+
+    <section>
+        <div>
+            <img src="images/real5.jpg" alt="Photocopier model X">
+            <img src="images/real4.jpg" alt="Photocopier model Y">
+            <img src="images/real3.jpg" alt="Photocopier model X">
+            <img src="images/real2.jpg" alt="Photocopier model Y">
+            <img src="images/real.jpg" alt="Printer with accessories">
+            <img src="images/real4.jpg" alt="Office equipment showcase">
+            <img src="images/real3.jpg" alt="Printer with accessories">
+            <img src="images/real4.jpg" alt="Office equipment showcase">
+            <img src="images/pic1.jpg" alt="Printer toner display">
+            <img src="images/pic1.jpg" alt="Additional printer toner">
+            <img src="images/real.jpg" alt="Photocopier model X">
+            <img src="images/real2.jpg" alt="Photocopier model Y">
+            <img src="images/real.jpg" alt="Photocopier model X">
+            <img src="images/real2.jpg" alt="Photocopier model Y">
+            <img src="images/real3.jpg" alt="Printer with accessories">
+            <img src="images/real4.jpg" alt="Office equipment showcase">
+            <img src="images/real3.jpg" alt="Printer with accessories">
+            <img src="images/real4.jpg" alt="Office equipment showcase">
+            <img src="images/real5.jpg" alt="Printer toner display">
+            <img src="images/real5.jpg" alt="Additional printer toner">
+        </div>
+    </section>
+
+    <footer style="background: #333; color: #fff; text-align: center; padding: 20px;">
+        <div>
+          <a href="https://facebook.com" target="_blank" style="margin: 0 10px;">
+            <img src="facebook-icon.svg" alt="Facebook" style="width: 30px;">
+          </a>
+          <a href="https://youtube.com" target="_blank" style="margin: 0 10px;">
+            <img src="youtube-icon.svg" alt="YouTube" style="width: 30px;">
+          </a>
+          <a href="https://instagram.com" target="_blank" style="margin: 0 10px;">
+            <img src="instagram-icon.svg" alt="Instagram" style="width: 30px;">
+          </a>
+          <a href="https://wa.me/1234567890" target="_blank" style="margin: 0 10px;">
+            <img src="whatsapp-icon.svg" alt="WhatsApp" style="width: 30px;">
+          </a>
+          <a href="https://twitter.com" target="_blank" style="margin: 0 10px;">
+            <img src="twitter-icon.svg" alt="Twitter" style="width: 30px;">
+          </a>
+        </div>
+      </footer>
+      
+
+    
+</body>
+</html>
